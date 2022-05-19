@@ -1,5 +1,10 @@
 # Basic project variables
 
+variable "workspace_name" {
+  description = "The name of the workspace to be created"
+  type = string
+}
+
 variable "service_owner" {
   description = "Owner of deployment (which team manages?)"
   type        = string

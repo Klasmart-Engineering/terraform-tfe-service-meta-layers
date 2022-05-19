@@ -1,5 +1,5 @@
 resource "tfe_workspace" "service-meta" {
-  name               = "service-meta-${local.working_directory}"
+  name               = var.workspace_name
   organization       = local.tfe_organization_name
   execution_mode     = "remote"
   description        = local.readme_kidskube_meta
