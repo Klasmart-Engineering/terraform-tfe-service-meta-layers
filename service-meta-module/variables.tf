@@ -27,7 +27,7 @@ variable "tfe_deploy_ssh_key_id" {
 variable "vcs_oauth_token_id" {
   description = "ID of the VCS OAuth token to use for configuring git-trigger automated updates"
   type        = string
-  default     = "ot-Ga8vDZ6geXQzUnRH"
+  default     = "ot-d4J8jBXB89U1bwzw"
 }
 
 variable "working_directory" {
