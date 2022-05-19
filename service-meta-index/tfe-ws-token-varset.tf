@@ -4,6 +4,6 @@ resource "tfe_variable_set" "tfe-ws-token-service" {
   organization  = local.tfe_organization
   workspace_ids = [
     local.service_meta_index_workspace_id,
-    module.svc-ws-service-meta-data.output.tfe_workspace_service_meta_id,
+    module.svc-ws-service-meta-data.tfe_workspace_service_meta_id,
   ]
 }
