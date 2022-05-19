@@ -18,6 +18,11 @@ variable "terraform_version" {
   default     = "1.1.7"
 }
 
+variable "service_meta_repo" {
+  description = "The repo containing the meta configuration for a service"
+  type        = string
+}
+
 variable "tfe_deploy_ssh_key_id" {
   description = "Name of the SSH key to authenticate with for Git-SSH based service module imports"
   type        = string
