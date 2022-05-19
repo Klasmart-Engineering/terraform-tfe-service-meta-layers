@@ -3,12 +3,7 @@ module "svc-ws-service-meta-data" {
   source  = "../service-meta-module"
 
   # Module inputs here
-  region              = "eu-west-2"
-  project_environment = "apifactory"
-  project_region      = "uk"
   service_owner       = "Infra"
-
-  domain              = "apifactory.kidsloop.live"
   working_directory   = "data"
 
   # RBAC settings

@@ -1,8 +1,8 @@
 locals {
   tfe_organization = "kidsloop-infrastructure"
 
-  # Workspace ID of the main "meta-services-index" workspace
-  services_meta_index_workspace_id = "ws-281zBNj432bfpYBB"
+  # Workspace ID of the main "service-meta-index" workspace
+  service_meta_index_workspace_id = ""
 
   # RBAC settings
   tfe_team_access_permissions = {
