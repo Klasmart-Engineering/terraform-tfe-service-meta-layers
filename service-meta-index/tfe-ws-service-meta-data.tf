@@ -4,7 +4,7 @@ module "svc-ws-service-meta-data" {
 
   # Module inputs here
   service_owner       = "Infra"
-  working_directory   = "data"
+  working_directory   = ""
   service_meta_repo   = "KL-Engineering/data-terraform-meta"
 
   # RBAC settings
