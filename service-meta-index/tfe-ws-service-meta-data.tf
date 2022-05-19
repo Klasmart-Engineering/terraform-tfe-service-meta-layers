@@ -8,6 +8,4 @@ module "svc-ws-service-meta-data" {
 
   # RBAC settings
   tfe_team_access_permissions = local.tfe_team_access_permissions
-  # Notification settings
-  notify_triggers = false
 }

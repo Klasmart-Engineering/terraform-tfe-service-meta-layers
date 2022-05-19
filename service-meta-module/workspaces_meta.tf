@@ -1,4 +1,4 @@
-resource "tfe_workspace" "service-meta-data" {
+resource "tfe_workspace" "service-meta" {
   name               = "service-meta-${local.working_directory}"
   organization       = local.tfe_organization_name
   execution_mode     = "remote"
@@ -20,7 +20,7 @@ resource "tfe_workspace" "service-meta-data" {
 resource "tfe_team_access" "meta" {
   for_each     = var.tfe_team_access_permissions
 
-  workspace_id = tfe_workspace.service-meta-data.id
+  workspace_id = tfe_workspace.service-meta.id
   team_id      = data.tfe_team.team_name_id_lookup[each.key].id
   access       = each.value
 }
