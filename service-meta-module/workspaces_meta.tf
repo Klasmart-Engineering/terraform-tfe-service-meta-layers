@@ -8,7 +8,7 @@ resource "tfe_workspace" "service-meta" {
   allow_destroy_plan = false
 
   # Deploy settings
-  ssh_key_id         = data.tfe_ssh_key.deploy.id
+  # ssh_key_id         = data.tfe_ssh_key.deploy.id
   working_directory  = local.working_directory
   vcs_repo {
     identifier   = "KL-Engineering/data-terraform-meta"
